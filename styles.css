@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+}
+
+.home {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  padding: 1rem;
+}
+
+.home nav h1 {
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 800;
+  color: red;
+}
+
+.home .banner {
+  width: 50%;
+  position: absolute;
+  bottom: 30%;
+}
+
+.home .banner h1 {
+  font-size: 2.2rem;
+}
+
+.home .banner p {
+  font-size: 1.2rem;
+}
+
+.home .banner .buttons .play {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: rgb(255, 0, 0);
+  border: transparent;
+  border-radius: 2px;
+  margin: 1rem 0 1rem 0;
+  font-size: 1rem;
+}
+
+.home .banner .buttons .play:hover {
+  opacity: 0.8;
+}
+
+.movies {
+  margin-bottom: 4rem;
+}
+
+.movies h1 {
+  margin: 1rem 0 1rem 0.5rem;
+  font-size: 1.8rem;
+}
+
+.movies .movies-row {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  gap: 1.2rem;
+  transition: tranform 0.5s;
+}
+
+.movies .movies-row::-webkit-scrollbar {
+  display: none;
+}
+
+.movies .movies-row img {
+  object-fit: contain;
+  height: 14rem;
+  width: 10rem;
+  margin: 0 0.2rem 0 0.2rem;
+  transition: 0.5s;
+}
+
+.movies .movies-row img:hover {
+  transform: translateY(0.5rem);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 0;
+  }
+  .home .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .home .banner h1 {
+    font-size: 2rem;
+  }
+
+  .home .banner p {
+    font-size: 1rem;
+  }
+  .home .banner .buttons .play {
+    width: 5rem;
+    height: 2rem;
+    background-color: rgb(255, 0, 0);
+    border: transparent;
+    border-radius: 2px;
+    margin: 1rem 0 1rem 0;
+  }
+}
