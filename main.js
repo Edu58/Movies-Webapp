@@ -10,12 +10,12 @@ const movie_title = document.getElementById("movie-title");
 const movie_description = document.getElementById("movie-description");
 
 TRENDING_REQ = `https://api.themoviedb.org/3/trending/movie/week?api_key=${API_KEY}`;
-ACTION_REQ = `https://api.themoviedb.org/3/discover/movie/?api_key=${API_KEY}&with_genres=28`;
-SCIENCE_REQ = `https://api.themoviedb.org/3/discover/movie/?api_key=${API_KEY}&with_genres=878`;
-ANIMATION_REQ = `https://api.themoviedb.org/3/discover/movie/?api_key=${API_KEY}&with_genres=16`;
-COMEDY_REQ = `https://api.themoviedb.org/3/discover/movie/?api_key=${API_KEY}&with_genres=35`;
-DOCUMENTARY_REQ = `https://api.themoviedb.org/3/discover/movie/?api_key=${API_KEY}&with_genres=99`;
-CRIME_REQ = `https://api.themoviedb.org/3/discover/movie/?api_key=${API_KEY}&with_genres=80`;
+ACTION_REQ = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=28`;
+SCIENCE_REQ = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=878`;
+ANIMATION_REQ = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=16`;
+COMEDY_REQ = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=35`;
+DOCUMENTARY_REQ = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=99`;
+CRIME_REQ = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=80`;
 
 //Banner movie
 fetch(TRENDING_REQ)
